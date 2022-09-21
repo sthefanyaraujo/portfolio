@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-color: #FFFFFF;
+  --font-color-second: #9572FC;
+  --background: #121212;
+  --background-section:  #151515;
+  --gray-light: #C4C4C4;
+  --gradient-pink: linear-gradient(132.33deg, #D24074 -0.67%, #6518B4 102.54%);
+  --gradient-blue: linear-gradient(51.06deg, #9572FC 0.87%, #10D7E2 97.48%);
+  ;
+}
+
+body {
+  background: var(--background);
+  color: var(--font-color);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  align-items: center;
+  border-bottom: 2px solid #151515;
+  display: flex;
+  height: 68px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-block: 30px;
+  width: 100%;
+}
+
+header a {
+  color: var(--font-color-second);
+  font-size: 24px;
+  line-height: 29.05px; 
+}
+
+
+nav ul{
+  display: flex;
+  gap: 62px;
+  list-style: none;
+}
+
+nav li a {
+  color: var(--gray-light);
+  font-size: 18px;
+  transition: color .4s;
+}
+
+nav li a:hover {
+  color:#9572FC;
+}
+
+section {
+  padding-block: 100px;
+}
+
+section:nth-child(2) {
+  background: var(--background-section);
+}
+
+.home {
+  padding-block: 200px;
+  text-transform: uppercase;
+  background: url(/assets/bg.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.home p {
+  color: var(--font-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+}
+
+.home .name {
+  color: var(--font-color-second);
+  font-size: 45px;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-block: 2px;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.btn1 {
+  background: var(--gradient-pink);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.btn2 {
+  background:  var(--gradient-blue);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.button {
+  align-items: center;
+  color: var(--font-color);
+  border-radius: 4px;
+  background: var(--background);
+  display: flex;
+  font-size: 14px;
+  padding: 6px 30px;
+  transition: all .3s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button svg {
+  width: 18px;
+  margin-right: 8px;
+} 
+
+.about, 
+.contact {
+  background: var(--background-section);  
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  max-width: 530px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.city {
+  font-size: 20px;
+  line-height: 24px;
+  margin-block: 30px 21px;
+  opacity: 0.9;
+}
+
+.text {
+  color: var(--gray-light);
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0.9;
+}
+
+.gradient-photo {
+  border-radius: 4px;
+  background:var(--font-color-second);
+  height: 363px;
+  padding-left: 5px;
+}
+
+.photo {
+  align-items: left;
+  border-radius: 0 4px  4px 0;
+  height: 363px;
+  width: 363px;
+}
+
+.info .buttons {
+  margin-top: 20px;
+  gap: 48px;
+}
+
+
+.info .button {
+  background: var(--background-section);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 500px;
+}
+
+.projects h3 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.projects p {
+  color: var(--gray-light);
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+
+.project-img {
+  height: 200px;
+  margin: 60px 0 40px;
+  width: 530px;
+}
+
+.projects .btn2 {
+  width: 181px;
+}
+
+.contact {
+  padding-block: 50px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-block: 50px;
+}
+
+
+input {
+  color: var(--background-section);
+  margin: 10px 0;
+  padding: 12px 4px;
+  width: 100%;
+  outline: none;
+}
+
+input:hover {
+  border: 2px solid#D24074;
+}
+
+input[type=text] {
+  margin-bottom: 40px;
+  padding-block: 50px;
+
+}
+
+ form .btn1 {
+  margin: 0 auto;
+  width: 50%;
+ }
+
+form .button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  background: var(--background);
+  padding-block: 40px;
+}
+
+footer .container a{
+  color: var(--gray-light);
+  font-size: 16px;
+}
